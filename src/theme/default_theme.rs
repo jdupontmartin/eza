@@ -46,11 +46,11 @@ impl Default for UiStyles {
                 user_execute_other:  Some(Green.bold()),
 
                 group_read:          Some(Yellow.normal()),
-                group_write:         Some(Red.normal()),
+                group_write:         Some(Red.bold()),
                 group_execute:       Some(Green.normal()),
 
                 other_read:          Some(Yellow.normal()),
-                other_write:         Some(Red.normal()),
+                other_write:         Some(Red.bold()),
                 other_execute:       Some(Green.normal()),
 
                 special_user_file:   Some(Purple.normal()),
@@ -81,11 +81,11 @@ impl Default for UiStyles {
             git: Some(Git {
                 new:         Some(Green.normal()),
                 modified:    Some(Blue.normal()),
-                deleted:     Some(Red.normal()),
+                deleted:     Some(Red.bold()),
                 renamed:     Some(Yellow.normal()),
                 typechange:  Some(Purple.normal()),
                 ignored:     Some(Style::default().dimmed()),
-                conflicted:  Some(Red.normal()),
+                conflicted:  Some(Red.bold()),
             }),
 
             git_repo: Some(GitRepo {
@@ -115,7 +115,7 @@ impl Default for UiStyles {
                 lossless:   Some(Cyan.bold()),
                 crypto:     Some(Green.bold()),
                 document:   Some(Green.normal()),
-                compressed: Some(Red.normal()),
+                compressed: Some(Red.bold()),
                 temp:       Some(Style::default().dimmed()),
                 compiled:   Some(Yellow.normal()),
                 build:      Some(Yellow.bold().underline()),
@@ -131,8 +131,8 @@ impl Default for UiStyles {
             header: Some(Style::default().underline()),
 
             symlink_path: Some(Cyan.normal()),
-            control_char: Some(Red.normal()),
-            broken_symlink: Some(Red.normal()),
+            control_char: Some(Red.bold()),
+            broken_symlink: Some(Red.bold()),
             broken_path_overlay: Some(Style::default().underline()),
 
             filenames: None,
@@ -177,13 +177,13 @@ impl Size {
             number_byte: Some(Green.normal()),
             number_kilo: Some(Green.bold()),
             number_mega: Some(Yellow.normal()),
-            number_giga: Some(Red.normal()),
+            number_giga: Some(Red.bold()),
             number_huge: Some(Purple.normal()),
 
             unit_byte: Some(Green.normal()),
             unit_kilo: Some(Green.bold()),
             unit_mega: Some(Yellow.normal()),
-            unit_giga: Some(Red.normal()),
+            unit_giga: Some(Red.bold()),
             unit_huge: Some(Purple.normal()),
         }
     }
